@@ -4,7 +4,7 @@
     msg: "Please set forgejo_runner__instance_address"
   when: forgejo_runner__instance_address == ''
 
-- name: Make Sure Forgejo runner token or secret is set
+- name: Make Sure Forgejo runner token is set
   ansible.builtin.fail:
     msg: "Please set forgejo_runner__token"
   when: forgejo_runner__token == ''
